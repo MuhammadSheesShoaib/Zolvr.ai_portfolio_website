@@ -87,6 +87,95 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Emerging Tech & Automation */}
+      <section className="py-20 bg-muted/10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl mb-4">Emerging Tech & Automation</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              We use the latest AI trends to simplify and automate the way you work.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+            {/* Custom MCP Servers */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              <Card className="h-full hover:shadow-lg transition-all duration-300">
+                <CardHeader className="text-center">
+                  <div className="inline-flex p-4 rounded-lg bg-blue-50 text-blue-500 mb-4 mx-auto">
+                    <Bot size={32} />
+                  </div>
+                  <CardTitle className="text-xl px-4">Custom MCP Servers – Built for Your Use Case</CardTitle>
+                </CardHeader>
+                <CardContent className="px-6 pb-6">
+                  <CardDescription className="text-center text-base leading-relaxed">
+                    Every business runs differently. That's why we design custom MCP servers to match your exact needs. Whether it's an AI that updates your reports, fetches insights from your database, or keeps your team organized—your MCP server is built around your workflow. You tell us the use case, we make it happen automatically.
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* n8n Workflows */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <Card className="h-full hover:shadow-lg transition-all duration-300">
+                <CardHeader className="text-center">
+                  <div className="inline-flex p-4 rounded-lg bg-green-50 text-green-500 mb-4 mx-auto">
+                    <Sparkles size={32} />
+                  </div>
+                  <CardTitle className="text-xl px-4">n8n Workflows & Automation</CardTitle>
+                </CardHeader>
+                <CardContent className="px-6 pb-6">
+                  <CardDescription className="text-center text-base leading-relaxed">
+                    Think of all the small but time-consuming tasks—sending follow-ups, moving data between apps, posting updates. With n8n automation, we connect everything together, so those tasks happen automatically in the background. Your business runs smoother, faster, and with fewer manual steps.
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Closing Message */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="md:col-span-2 lg:col-span-1 flex items-center justify-center"
+            >
+              <div className="text-center max-w-md px-4">
+                <div className="inline-flex p-4 rounded-lg bg-purple-50 text-purple-500 mb-6 mx-auto">
+                  <TrendingUp size={32} />
+                </div>
+                <h3 className="text-xl mb-4">The Big Picture</h3>
+                <p className="text-muted-foreground text-base leading-relaxed mb-6">
+                  Together, these tools mean your work gets done automatically—leaving you free to focus on growth, strategy, and the big picture.
+                </p>
+                <Button asChild>
+                  <Link to="/contact">
+                    Get Started
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Preview */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

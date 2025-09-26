@@ -47,7 +47,9 @@ export default function Services() {
         'Multi-step Reasoning & Planning',
         'Tool & API Integration',
         'Contextual Memory & Adaptation',
-        'Goal-driven Decision-Making'
+        'Goal-driven Decision-Making',
+        'n8n Workflows & Automation',
+        'Custom MCP Servers'
       ],
       useCases: [
         'Enterprise virtual assistants',
