@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Linkedin, Mail } from 'lucide-react';
+import logo from 'figma:asset/94c5db9a91da0fb24ebe14081b75bae7a1180700.png';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -34,8 +35,8 @@ export default function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground text-sm">Z</span>
+              <div className="w-8 h-8 flex items-center justify-center">
+                <img src={logo} alt="Zolvr.ai" className="w-8 h-8 object-contain" />
               </div>
               <span className="text-xl font-medium">Zolvr.ai</span>
             </Link>
